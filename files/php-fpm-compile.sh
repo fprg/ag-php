@@ -9,7 +9,8 @@ make install
 ln -s /usr/local/php/bin/* /usr/bin/
 ln -s /usr/local/php/sbin/* /usr/sbin/
 php -v
-cp php.ini-production /usr/local/php/lib/
+cp php.ini-production /usr/local/php/lib/php.ini
+cp /usr/local/php/etc/php-fpm.conf.default /usr/local/php/etc/php-fpm.conf
 cp sapi/fpm/init.d.php-fpm /etc/init.d/php-fpm
 chmod 755 /etc/init.d/php-fpm
-update-rc.d -f php-fpm defaults
+#update-rc.d -f php-fpm defaults
