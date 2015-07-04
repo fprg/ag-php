@@ -1,0 +1,6 @@
+---
+# tasks file for php
+- name: compile shell
+  copy: src=php-fpm-compile.sh dest=/tmp/php-fpm-compile.sh mode=0755 owner=root group=root
+- name: php compile command
+  command:/tmp/php-fpm-compile.sh
