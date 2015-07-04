@@ -5,7 +5,6 @@
   with_items:
     - gcc
     - gcc-c++
-    - systemd
     - httpd
     - httpd-devel
     - nginx
