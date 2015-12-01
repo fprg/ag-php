@@ -6,6 +6,7 @@
   with_items:
     - gcc
     - gcc-c++
+    - autoconf
     #- systemd
     - httpd
     - httpd-devel
